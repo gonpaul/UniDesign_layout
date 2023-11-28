@@ -1,0 +1,53 @@
+
+body * {
+  box-sizing: border-box;
+}
+
+header {
+  margin-bottom: 140px;
+
+}
+nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  list-style-type: none;
+  align-items: center;
+}
+
+nav li {
+  color: #686565;
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+nav li:first-of-type {
+  color: #0E0578;
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  mix-blend-mode: darken;
+
+}
+
+/*/////////////// whoami block ///////////////*/
+.whoami {
+  display: flex;
+
+}
+
+.text-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.img-box {
+  background-color: bisque;
+  flex-basis: 50%;
+  flex-shrink: 0;
+}
