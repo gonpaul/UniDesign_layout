@@ -4,13 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>UniDesign</title>
+  <link rel="stylesheet" href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"/>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <nav>
       <!-- <img src="./assets/UniDesign.png" alt="logo"> -->
-      <li>UniDesign</li>
+      <div class="logo">
+        UniDesign
+      </div>
       <li>About me</li>
       <li>Projects</li>
       <li>Contacts</li>
@@ -18,16 +21,71 @@
     </nav>
   </header>
   <main>
-    <section class="whoami">
+    <section class="whoami mgb-200">
       <div class="text-box">
-        <p>Welcome To My PortFolio</p>
-        <p>Hi, I am John Doe UI/UX <span>Designer</span></p>
-        <p>Lorem Ipsum dolar sit amet, consectetur adipicsing elit. Locus odio et, plateo erat est sed turpis hoc equit</p>
-        <button></button>
-        <button></button>
+        <p class="welcome-text">Welcome To My PortFolio</p>
+        <p class="bigBlueFont">Hi, I am John Doe UI/UX <span class="emphasis-on-word">Designer</span></p>
+        <p class="whoami-p">Lorem Ipsum dolar sit amet, consectetur adipicsing elit. Locus odio et, plateo erat est sed turpis hoc equit</p>
+        <div class="btns-box">
+          <button class="btn btn-hire-me mg-r-70"><span class="text">Hire me</span></button>
+          <button class="btn btn-my-project"><span class="text">My project</span></button>
+        </div>
       </div>
       
       <div class="img-box">
+        <img src="./assets/Rectangle 3.png" alt="hero-photo">
+      </div>
+
+    </section>
+
+    <section class="about-me mgb-200">
+      <div class="am-text-box ">
+        <p class="bigBlueFont">About Me</p>
+        <p class="am-mainp">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>  
+        <button class="btn btn-hire-me"><span class="text">Hire me</span></button>
+      </div>
+
+      <div class="am-img-box">
+        <img src="./assets/aboutme.png" alt="about-me">
+      </div>
+    </section>
+  
+    <section class="my-projects">
+        <p class="bigBlueFont">My Projects</p>
+        <p class="am-mainp w-auto">Lorem Ipsum is simply dummy text of the printing</p>
+        <div class="projects-grid-container">
+          <img src="./assets/Rectangle 30.png" alt="project" class="">
+          <img src="./assets/Rectangle 30.png" alt="project" class="">
+          <img src="./assets/Rectangle 30.png" alt="project" class="">
+          <img src="./assets/Rectangle 30.png" alt="project" class="">
+          <img src="./assets/Rectangle 30.png" alt="project" class="">
+          <img src="./assets/Rectangle 30.png" alt="project" class="">
+          <img src="./assets/Rectangle 30.png" alt="project" class="">
+          <img src="./assets/Rectangle 30.png" alt="project" class="">
+          <img src="./assets/Rectangle 30.png" alt="project" class="">
+        </div>
+
+    </section>
+
+    <section class="contact-section">
+      <div class="contact-headers">
+        <p class="bigBlueFont w-auto">Contact me</p>
+        <p class="am-mainp w-auto">Lorem Ipsum is simply dummy text of the printing</p>
+      </div>
+      
+      <div class="data-box">
+        <div class="form">
+          <fieldset class="contact-fieldset">
+            <input type="email" id="email" placeholder="Email">
+            <input type="password" id="password" placeholder="Password">
+            <textarea id="message" cols="30" rows="10" placeholder="Message.."></textarea>
+            <p class="contact-action dim" onclick="">Contact</p>
+          </fieldset>
+        </div>
+  
+        <div class="contact-img">
+          <img src="./assets/saly-13.png" alt="">
+        </div>
 
       </div>
     </section>
